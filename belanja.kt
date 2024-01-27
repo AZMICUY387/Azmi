@@ -15,12 +15,12 @@ fun barang(item : String):Double{
 fun diskon(harga: Double):Double{
     
     if(harga >= 100000){
-        val diskon = harga * 0.1
+        val diskon = harga * 0.01
     	val total = harga - diskon
         return total
 	}
     else if(harga >= 80000){
-        val diskon = harga * 0.05
+        val diskon = harga * 0.10
     	val total = harga - diskon
         return total
 	}
@@ -36,5 +36,5 @@ fun main() {
     val harga = barang(namabrgg)
     
     val total = diskon(harga)
-    println("Terima Kasih Telah Berbelanja Di BAyu SHOPPP\nNama Barang\t\t:\t$namabrgg\nHarga\t\t\t:\t$harga\nTOTAL YG DIBAYAR \t:\t$total")
+    println("|Terima Kasih Telah Berbelanja  \n|BAyu SHOPPP\n|Nama Barang\t\t:\t$namabrgg\n|Harga\t\t\t:\t$harga\n|TOTAL YG DIBAYAR \t:\t$total")
 }
