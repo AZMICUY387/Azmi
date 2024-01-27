@@ -15,12 +15,12 @@ fun barang(item : String):Double{
 fun diskon(harga: Double):Double{
     
     if(harga >= 100000){
-        val diskon = harga * 0.01
+        val diskon = harga * 0.1
     	val total = harga - diskon
         return total
 	}
     else if(harga >= 80000){
-        val diskon = harga * 0.10
+        val diskon = harga * 0.05
     	val total = harga - diskon
         return total
 	}
