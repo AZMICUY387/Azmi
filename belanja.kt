@@ -1,17 +1,18 @@
+
 //fungsi dengan return
-fun barang(item : String):Int{
+fun barang(item : String):Double{
     return when (item){
-    	"Gamis" -> 150000
-        "Kaos" -> 50000
-        "Kemeja" -> 700000
-        "Celana" -> 120000
-        "Kaos Dalam" -> 20000
+    	"Gamis" -> 150000.0
+        "Kaos" -> 50000.0
+        "Kemeja" -> 700000.0
+        "Celana" -> 120000.0
+        "Kaos Dalam" -> 20000.0
         
-        else -> 0
+        else -> 0.0
     } 
 }
 
-fun diskon(harga: Int):Double{
+fun diskon(harga: Double):Double{
     
     if(harga >= 100000){
         val diskon = harga * 0.01
@@ -24,15 +25,16 @@ fun diskon(harga: Int):Double{
         return total
 	}
     else {
-    return harga
+        val total = harga
+    	return total
     }
 
 }
 
 fun main() {
-    val namabrgg = "Celana"
+    val namabrgg = "Kaos"
     val harga = barang(namabrgg)
     
     val total = diskon(harga)
-    println("Terima Kasih Telah Berbelanja Di BAyu SHOPPP\nNama Barang\t:\t$namabrgg\nTOTAL \t\t:\t $total")
+    println("Terima Kasih Telah Berbelanja Di BAyu SHOPPP\nNama Barang\t\t:\t$namabrgg\nHarga\t\t\t:\t$harga\nTOTAL YG DIBAYAR \t:\t$total")
 }
