@@ -10,18 +10,6 @@ fun barang(item : String):Int{
         else -> 0
     } 
 }
-//fungsi dengan return
-fun barang(item : String):Int{
-    return when (item){
-    	"Gamis" -> 150000
-        "Kaos" -> 50000
-        "Kemeja" -> 700000
-        "Celana" -> 120000
-        "Kaos Dalam" -> 20000
-        
-        else -> 0
-    } 
-}
 
 fun diskon(harga: Int):Double{
     
